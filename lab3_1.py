@@ -2,7 +2,7 @@ def sums():
    
    #TODO: Initialize a variable called first_sum and store the sum of 
    # 2 and 2
-   first_sum = (4)
+   first_sum = 2 + 2
    print(first_sum)
    #TODO: Store to first_sum the value of first_sum times 10
    print(first_sum * 10)
@@ -33,29 +33,41 @@ def greeter_bot():
    # Hint: to get the test to pass, the greeting should be "Hello, input name"
    fname = input()
    fname = 'tom'
-   print('Hello, Tom')
+   print('Hello, fname')
 
-def temp_calculator():
+def temp_calculator(temp, unit):
 
    # TODO: Write code that prompts the user for a temperature in degrees
    # celsius and prints the equivalent temperature in degrees fahrenheit.
    # The formula is C = (F - 32) * (5/9). 
-   print()
-
+    unit = unit.lower()
+    if unit == "c":
+        temp = 9.0 / 5.0 * temp + 32
+        return "%s degrees Fahrenheit"% temp
+    if unit == "f":
+        temp = (temp - 32)  / 9.0 * 5.0
+        return "%s degrees Celsius"% temp
+ 
+   intemp = int(raw_input("What is the temperature?\n"))
+   inunit = str(raw_input("Please enter the unit of measure (f or c):\n"))
+   print convert(intemp, inunit)
 def equitable_bill_splitter():
    
    # TODO: Read the following code and add comments to each line explaining what
    # it does. To write a comment, begin the line with an octothorpe (hashtag, #)
+   #How many people are paying?
    people = int(input("How many people are paying? "))
+   #Total number of Salaries
    salaries = []
+   #total
    total = 0
    
    for i in range(people):
       sal = int(input("What is the salary of person {}?".format(i+1)))
       total += sal
       salaries.append(sal)
-   
+   #Total bill based on poeople and bill
    total_bill = int(input("How much is the bill? "))
-   
+   # The math to figure out how much everyone should pay
    for j in range(len(salaries)):
       print("Person {} should pay ${}\n".format(j + 1, round((total_bill * (salaries[j]/total)), 2)))
