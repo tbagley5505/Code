@@ -38,7 +38,7 @@ def temp_calculator(unit):
    # Write code that prompts the user for a temperature in degrees
    # celsius and prints the equivalent temperature in degrees fahrenheit.
    # The formula is C = (F - 32) * (5/9). 
-   unit = input('what is the temperature in degrees celsius that you would like converted to fahrenheit?')
+   unit = input('what is the temperature in degrees celsius that you would like converted to fahrenheit?/n')
    cel = unit
    fahr = cel / (5/9) + 32    
    print(fahr)
@@ -50,7 +50,7 @@ def equitable_bill_splitter():
    # it does. To write a comment, begin the line with an octothorpe (hashtag, #)
    #How many people are paying? (imput by user) convert imput into integer, 
    # and store in varialbe called people.
-   people = int(input("How many people are paying? "))
+   people = int(input('How many people are paying?/n'))
    #Total number of Salaries
    salaries = []
    #total
@@ -59,11 +59,11 @@ def equitable_bill_splitter():
    # index zero based list of salaries and it starts at 0+1 until we 
    # get to the total number
    for i in range(people):
-      sal = int(input("What is the salary of person {}?".format(i+1)))
+      sal = int(input('What is the salary of person {}?'.format(i+1)))
       total += sal
       salaries.append(sal)
    #Total bill based on user imput
-   total_bill = int(input("How much is the bill? "))
+   total_bill = int(input('How much is the bill? '))
    # The math to figure out how much everyone should pay based on imputs
    for j in range(len(salaries)):
       print("Person {} should pay ${}\n".format(j + 1, round((total_bill * (salaries[j]/total)), 2)))
