@@ -39,9 +39,9 @@ def temp_calculator(unit):
    # celsius and prints the equivalent temperature in degrees fahrenheit.
    # The formula is C = (F - 32) * (5/9). 
    unit = input('what is the temperature in degrees celsius that you would like converted to fahrenheit?')
-   c = unit
-   f = c / (5/9) + 32    
-   print (f)
+   cel = unit
+   fahr = cel / (5/9) + 32    
+   print(fahr)
 
 
 def equitable_bill_splitter():
