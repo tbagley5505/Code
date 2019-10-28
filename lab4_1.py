@@ -18,15 +18,15 @@ def multi_condition():
    # Notice, this will give us an error if we don't enter an integer
    # in Everyday Coding, we'll learn how to catch errors like this.
    user_data = int(input('Please give me an integer./n'))
-      if user_data == 0
-         print ('Do not be such a zero!')
+   if user_data == 0
+      print ('Do not be such a zero!')
+   else:
+      user_data%2 >= 0
+         print('Even Steven!')  
       else:
-         user_data%2 >= 0
-            print('Even Steven!')  
-         else:
-            print('Positively odd!')
-      elif user_data =< 0
-         print('Negative Nelly!')   
+         print('Positively odd!')
+   elif user_data =< 0
+      print('Negative Nelly!')   
 
    # Now evaluate the user_data again and have several conditions
    # if the value is zero, print "Don't be such a zero!"
