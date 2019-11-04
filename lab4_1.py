@@ -43,7 +43,8 @@ def is_underage():
 
    # Prompt the user for their age and store it to a variable. Don't
    # forget to convert the input to an integer.
-   is_underage = int(input('What is your age?/n'))
+   is_underage = input('What is your age?')
+   is_underage = int(is_underage)
    print(is_underage)   
 
 
@@ -78,7 +79,6 @@ def countdown():
    while n > 0:
       print(n)
       n = n - 1
-   Print('none')
    # So the tests fail and they don't throw errors
    return None
 
@@ -98,18 +98,21 @@ def guessing_game(num):
    # if the user enters that the program should exit, saying 
    # "Goodbye, quitter!"
    # No, it's not a very nice program. 
-   num = int(input('what is your guess?'))
+   n = 10
+   while n > 0:   
+      user_input = input('what is your guess?')
+      if user_input == 'q':
+         print('Goodbye, Quitter!')
+         return None
+      user_input = int(user_input)
       if user_input == num:
          print('winner winner chicken Dinner!!')
-      elif user_input == q
-         print('Goodbye, Quitter!')
-      n = 10
-   while n > 0:
-      elif user_input >= num
+         return None
+      elif user_input < num:
          print('too low!')
-      elif user_input >= num
+      else :
          print('too high!')
-       n = n - 1
-       Print('game over')
+      n = n - 1
+   print('game over')
    # So the tests fail and they don't throw errors
    return None
