@@ -16,7 +16,7 @@ def check_split(bill):
     values = []
     for i in range(party_total):
         values.append(int(input('Please imput salaries for guest name []')))  
-
+Return None
 #Calculate total salary for party
 
 
@@ -30,3 +30,19 @@ def check_split(bill):
      #Calculate the portion of the bill based on their salary percentage
 
      #Print name and bill portion
+
+
+
+def is_even(bunnies)
+    if isinstance(bunnies,int)
+        if bunnies % 2 == 0:
+            return True
+        else:
+            return False
+    else:
+        print("number please")
+        Return None
+
+is_even(8)
+is_even(5)
+is_even("cow")        

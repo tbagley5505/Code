@@ -1,7 +1,7 @@
 def is_even():
    # Notice, this will give us an error if we don't enter an integer
    # in Everyday Coding, we'll learn how to catch errors like this.
-   user_data = int(input('Please give me an integer./n'))
+   user_data = int(input('Please give me an integer.'))
    out = None
    
    # Create a conditional that sets out to True if the user enters
@@ -17,16 +17,17 @@ def is_even():
 def multi_condition():
    # Notice, this will give us an error if we don't enter an integer
    # in Everyday Coding, we'll learn how to catch errors like this.
-   user_data = int(input('Please give me an integer./n'))
-   if user_data == 0
+   user_data = int(input('Please give me an integer.'))
+   if user_data == 0:
       print ('Do not be such a zero!')
+   elif user_data < 0:
+      print('Negative Nelly!') 
    else:
-      user_data%2 >= 0
-         print('Even Steven!')  
+      if user_data % 2 == 0:
+         print('Positively odd!')  
       else:
-         print('Positively odd!')
-   elif user_data =< 0
-      print('Negative Nelly!')   
+         print('Even Steven!')
+    
 
    # Now evaluate the user_data again and have several conditions
    # if the value is zero, print "Don't be such a zero!"
