@@ -30,8 +30,8 @@ def greeter_bot():
    # I have started it for you, but you need to modify the input and 
    # print functions.
    # Hint: to get the test to pass, the greeting should be "Hello, input name"
-   fname = input('What is your first name?\n')
-   print('Hello, fname')
+   fname = input('What is your first name?')
+      print('Hello' , fname)
 
 def temp_calculator(unit):
 
@@ -51,7 +51,7 @@ def equitable_bill_splitter():
    #How many people are paying? (imput by user) convert imput into integer, 
    # and store in varialbe called people.
    people = int(input('How many people are paying?/n'))
-   #Total number of Salaries
+   #Total number of Salaries in a list
    salaries = []
    #total
    total = 0

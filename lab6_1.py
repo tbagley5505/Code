@@ -12,18 +12,6 @@ def divisible_by_7()
       return False
 
 
-
-user_data = int(input('Please give me an integer.'))
-   if user_data == 0:
-      print ('Do not be such a zero!')
-   elif user_data < 0:
-      print('Negative Nelly!') 
-   else:
-      if user_data % 2 == 0:
-         print('Positively odd!')  
-      else:
-         print('Even Steven!')
-    
 # Write a function called compare_it that takes two parameters. 
 # You should first test if both parameters are integers.
 # If not, return False
@@ -32,7 +20,20 @@ user_data = int(input('Please give me an integer.'))
 # Finally, test if the parameters are greater than zero.
 # If they are not, return False.
 # If all of these tests pass, return True.
-def compare_it()
+def compare_it(num1, num2) 
+   if isinstance(int, num1)
+      return False
+   elif isinstance(int, num2)
+      return False
+   elif num1 is not num2
+      return False
+   elif num1 < 0
+      return False
+   elif num2 < 0
+      return False
+   else: 
+      return True
+      
 
 
 # Write a function called keyword_counter that takes three parameters
