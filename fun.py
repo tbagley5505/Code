@@ -1,17 +1,15 @@
-def is_even(bunnies):
-    if isinstance(bunnies,int):
-        if bunnies % 2 == 0:
-            return True
+
+def url_ver(url):
+    domains = [".com", ".net", ".edu", ".gov"]
+    if isinstance(url, str):
+        if url.endswith((tuple(domains))):
+            print("right")
         else:
-            return False
+            print("Please enter a vaild URL")
+            return None
     else:
-        print("number please")
+        print("Please enter a vaild UL")
         return None
 
-is_even(8)
-is_even(5)
-is_even("cow")        
-
-
-fname = input('What is your first name?')
-      print('Hello' , fname)
+url = 23
+url_ver(url)
